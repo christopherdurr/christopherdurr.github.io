@@ -1,0 +1,406 @@
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 1.45;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+#content {
+    overflow: hidden;
+}
+#section-1 {
+    background-color: #eee;
+    padding-bottom: 10%;
+}
+#section-2 {
+    margin-top: 10%;
+    padding-bottom: 10%;
+}
+#section-3 {
+    padding-top: 5%;
+    background-color: #eee;
+    padding-bottom: 50%;
+    z-index: 5;
+}
+#section-4 {
+    background-color: gray;
+    padding-bottom: 10%;
+    z-index: 6;
+}
+#section-5 {
+    padding-top: 10%;
+    padding-bottom: 40%;
+    background-color: #eee;
+    z-index: 6;
+}
+#section-6 {
+    background-color: gray;
+    padding-top: 50%;
+    padding-bottom: 10%;
+}
+.work-buttons {
+    color: white;
+    font-family: Oswald;
+    font-size: 24px;
+}
+h1 {
+    color: #45b29a;
+}
+h2 {
+    color: #eee;
+    margin-top: -1%;
+}
+p {
+    color: #333333;
+}
+.button-wrapper {} .button {} .button a {
+    background-color: #2980b9;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 5% 5% 5% 5%;
+    color: #fff;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.button a:hover {
+    background: #515B64;
+}
+.nav-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    z-index: 5;
+}
+.nav-wrapper #nav-background,
+.nav-wrapper #nav-content {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.nav-wrapper #nav-content {
+    background-color: transperent;
+}
+.nav-wrapper #nav-background {
+    background-color: white;
+    border-bottom: 1px solid #d6e9c6;
+    display: none;
+}
+.nav-items {
+    text-align: right;
+    color: #45b29a;
+}
+.nav-item {
+    display: inline;
+    padding: 1%;
+}
+.mountain-range {
+    width: 120%;
+    height: 100%;
+    margin-left: -10%;
+    background-color: #e0ebe8;
+}
+.cloudA {
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 5%;
+    -webkit-animation: Clouds 50s linear infinite;
+    -moz-animation: Clouds 50s linear infinite;
+    -ms-animation: Clouds 50s linear infinite;
+    -o-animation: Clouds 50s linear infinite;
+    animation: Clouds 50s linear infinite;
+}
+.cloudB {
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 10%;
+    -webkit-animation: Clouds 60s linear infinite;
+    -moz-animation: Clouds 60s linear infinite;
+    -ms-animation: Clouds 60s linear infinite;
+    -o-animation: Clouds 60s linear infinite;
+    animation: Clouds 60s linear infinite;
+}
+.cloudC {
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 6%;
+    -webkit-animation: Clouds 25s linear infinite;
+    -moz-animation: Clouds 25s linear infinite;
+    -ms-animation: Clouds 25s linear infinite;
+    -o-animation: Clouds 25s linear infinite;
+    animation: Clouds 25s linear infinite;
+}
+.cloudD {
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 13%;
+    -webkit-animation: Clouds 90s linear infinite;
+    -moz-animation: Clouds 90s linear infinite;
+    -ms-animation: Clouds 90s linear infinite;
+    -o-animation: Clouds 90s linear infinite;
+    animation: Clouds 90s linear infinite;
+}
+.hosting-cloud {
+    position: absolute;
+    width: 10%;
+    height: auto;
+}
+#cloudE {
+    right: 28%;
+}
+#cloudF {
+    left: 25%;
+    margin-top: 18%;
+}
+#cloudG {
+    right: 25%;
+    margin-top: 22%;
+}
+.content {} .card {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+    height: 75%;
+    background-color: white;
+}
+.face {
+    position: absolute;
+    width: 30%;
+    margin-left: 15%;
+    margin-top: -5%;
+    height: auto;
+}
+#hello {
+    text-align: center;
+    padding-top: 40%;
+}
+.terminal-window {
+    width: 60%;
+    margin-left: 20%;
+    height: 6%;
+    background-color: #DEDEDE;
+    margin-bottom: 0;
+}
+.terminal {
+    width: 58%;
+    margin-left: 20%;
+    margin-top: 0;
+    height: 80%;
+    background-color: #424242;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    overflow: hidden;
+}
+.terminal p {
+    color: white;
+    font-size: 120%;
+}
+.blinker {
+    -webkit-animation: blink .75s linear infinite;
+    -moz-animation: blink .75s linear infinite;
+    -ms-animation: blink .75s linear infinite;
+    -o-animation: blink .75s linear infinite;
+    animation: blink .75s linear infinite;
+}
+.cloud-server {
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
+    z-index: 3;
+}
+.cloud-server-dot {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    left: 30%;
+    z-index: 4;
+    -webkit-animation: blink .75s linear infinite;
+    -moz-animation: blink .75s linear infinite;
+    -ms-animation: blink .75s linear infinite;
+    -o-animation: blink .75s linear infinite;
+    animation: blink .75s linear infinite;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1.5s;
+}
+.bars {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-top: -1%;
+    z-index: 2;
+}
+.terminal-icon {
+    width: 20%;
+    height: auto;
+    margin-left: 10%;
+}
+.network {
+    width: 12%;
+    height: auto;
+    margin-left: 14.25%;
+}
+.files {
+    width: 20%;
+    height: auto;
+    margin-left: 12%;
+}
+.bottom-bars {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+.browser {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+.work-caption {
+    width: 70%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 10%;
+    padding: 5%;
+    background-color: white;
+    z-index: 4;
+}
+.html-icon {
+    position: absolute;
+    width: 10%;
+    height: auto;
+    left: 25%;
+}
+.js-icon {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    left: 46%;
+    margin-top: -9%;
+}
+.css-icon {
+    position: absolute;
+    width: 10%;
+    height: auto;
+    right: 25%;
+}
+.logo3 {
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+    margin-bottom: 5%;
+}
+.logo4 {
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+    margin-bottom: 5%;
+}
+.html2 {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    left: 20%;
+    z-index: 2;
+}
+.wordpress {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    right: 20%;
+    z-index: 2;
+}
+.logo5 {
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+    margin-bottom: 5%;
+    z-index: 3;
+}
+.logo6 {
+    width: 20%;
+    height: auto;
+    margin-left: 40%;
+    margin-top: -10%;
+}
+.logo7 {
+    width: 30%;
+    height: auto;
+    margin-left: 62%;
+    margin-top: -20%;
+}
+.social-icon {
+    width: 30%;
+}
+#mail-box {
+    width: 40%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 10%;
+    padding: 5%;
+    background-color: white;
+    z-index: 4;
+}
+#mail-box-triangle {
+    width: 0;
+    height: 0;
+    margin-left: 60%;
+    margin-top: -8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    overflow: hidden;
+}
+#mail-box-triangle div {
+    width: 0;
+    height: 0;
+    margin-top: -500px;
+    margin-left: -500px;
+    border-top: 500px solid transparent;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid white;
+}
+#footer-icon-html {
+    width: 3%;
+    height: auto;
+}
+#footer-icon-css {
+    width: 3%;
+    height: auto;
+}
+#footer-icon-github {
+    width: 5%;
+    height: auto;
+    margin-left: 95%;
+}
+.thanks {
+    font-family: 'Karla', sans-serif;
+    font-size: 18;
+    color: white;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.thanks:hover {
+    color: #333333;
+}
