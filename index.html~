@@ -1,75 +1,172 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-
     <title>Connor Gutman</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- css -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive-nav.css">
+</head>
 
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+<body>
+    <div id="content">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  <style type="text/css"></style><style id="holderjs-style" type="text/css"></style></head>
-
-  <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Connor Gutman</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
+        <div class="nav-wrapper">
+            <div id="nav-background"></div>
+            <div id="nav-content">
+                <img src="img/logo8.svg" style="width:6%; margin-top:1%; margin-left:15%;">
+                <nav class="nav-collapse" style="margin-top:-4%; left:-15%;">
+                    <ul class="nav-items">
+                        <li class="nav-item" style="display:inline; "><a href="#about">About</a>
+                        </li>
+                        <li class="nav-item" style="display:inline;"><a href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item" style="display:inline;"><a href="#work">Work</a>
+                        </li>
+                        <li class="nav-item" style="display:inline;"><a href="#social">Social</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">A simple page about me.</h1>
-            <p class="lead">Why the fuck did this domain take so much effort to get working?</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Fuck buttons</a>
-            </p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
-
         </div>
+        <div id="section-1">
 
-      </div>
+            <img class="cloudA" src="img/cloudA.svg">
+            <img class="cloudB" src="img/cloudB.svg">
+            <img class="cloudC" src="img/cloudC.svg">
+            <img class="cloudD" src="img/cloudD.svg">
+            <img class="mountain-range" src="img/mountainrange.svg">
+            <div class="card">
+                <img class="face wow fadeInDown" id="about" data-wow-delay="0.5s" src="img/logo.svg">
+                <h1 id="hello">Hi.</h1>
+                <p style="text-align:center;">I'm a developer from Phoenix, Arizona.
+                    <br>I love the Web and I love Linux.</p>
+            </div>
+            <p id="skills" style="text-align:center;">SKILLS</p>
+            <div class="terminal-window">
+                <h1 style="text-align:center; font-size:100%;">Connor @ connorgutman.com</h1>
+            </div>
+            <div class="terminal">
+                <p class="wow fadeInLeft" data-wow-delay="0.5s" style="height:10%;">~ HTML: [ |||||||||||||||||||||||||||||||||||||||||||||||||| ] 100%</p>
+                <p class="wow fadeInLeft" data-wow-delay="0.5s" style="height:10%;">~ CSS: [ |||||||||||||||||||||||||||||||||||||||||||||||||| ] 100%</p>
+                <p class="wow fadeInLeft" data-wow-delay="0.5s" style="height:10%;">~ JAVASRIPT: [ |||||||||||||||||||||||||||||||||||||||||||||||||| ] 100%</p>
+                <p class="wow fadeInLeft" data-wow-delay="0.5s" style="height:10%;">~ JQUERY: [ |||||||||||||||||||||||||||||||||||||||||||||||||| ] 100%</p>
+                <p class="wow fadeInLeft" data-wow-delay="0.5s" style="height:10%;">~ PHP: [ |||||||||||||||||||||||||||||||||||||||||||||||||| ] 100%</p>
+                <p class="wow fadeInLeft" data-wow-delay="0.5s" style="height:10%;">~ LINUX: [ |||||||||||||||||||||||||||||||||||||||||||||||||| ] 100%</p>
+                <p class="wow fadeIn" data-wow-delay="1s" style="height:10%; display:inline;">"Resume" [New file]<span class="blinker"> █</span>
+                </p>
+                <p></p>
 
+            </div>
+        </div>
+        <div id="section-2">
+
+            <h1 style="text-align:center;">What I do</h1>
+            <img class="cloud-server wow fadeInUp" data-wow-delay="0.5s" src="img/clouds.svg">
+            <img class="cloud-server-dot blinker" src="img/clouds-dot.svg">
+            <img class="bars wow fadeIn" data-wow-delay="0.75s" src="img/bars.svg">
+            <img class="terminal-icon wow fadeInDown" data-wow-delay="1s" src="img/terminal.svg">
+            <img class="network wow fadeInDown" data-wow-delay="1s" src="img/network.svg">
+            <img class="files wow fadeInDown" data-wow-delay="1s" src="img/files.svg">
+            <img class="bottom-bars wow fadeInDown" data-wow-delay="1.25s" src="img/bars2.svg">
+            <img class="browser wow fadeInUp" data-wow-delay="1s" src="img/browser.svg">
+        </div>
+        <div id="section-3">
+            <h1 id="work" style="text-align:center">My Work</h1>
+            <div class="work-caption wow fadeInDown" data-wow-delay="0.5s">
+                <img class="hosting-cloud" id="cloudE" src="img/cloudE.svg">
+                <img class="hosting-cloud" id="cloudF" src="img/cloudF.svg">
+                <img class="hosting-cloud" id="cloudG" src="img/cloudG.svg">
+                <img class="logo3 wow fadeInDown" data-wow-delay="1s" src="img/logo3.svg">
+                <div class="button" style="text-align: center;">
+                    <a class="work-buttons" href="hosting.html"><span class="work-buttons">Premium Cloud Hosting</span></a>
+                </div>
+
+            </div>
+            <div class="work-caption wow fadeInDown" data-wow-delay="0.5s">
+                <img class="html-icon" src="img/html.svg">
+                <img class="js-icon" src="img/js.svg">
+                <img class="css-icon" src="img/css.svg">
+                <img class="logo4 wow fadeInDown" data-wow-delay="1s" src="img/logo4.svg">
+                <div class="button" style="text-align: center;">
+                    <a class="work-buttons" href="freelance.html"><span class="work-buttons">Freelance Web Development</span></a>
+                </div>
+            </div>
+            <div class="work-caption wow fadeInDown" data-wow-delay="0.5s">
+                <img class="html2" src="img/html2.svg">
+                <img class="wordpress" src="img/wordpress.svg">
+                <img class="logo5 wow fadeInDown" data-wow-delay="1s" src="img/logo5.svg">
+                <div class="button" style="text-align: center;">
+                    <a href="http://themeforest.net/user/connorgutman"><span class="work-buttons">Themes For Sale</span></a>
+                </div>
+            </div>
+        </div>
+        <div id="section-4">
+            <img class="logo6 wow tada" id="social" data-wow-delay="0.5s" src="img/logo6.svg">
+            <!-- Circle background and post office themed -->
+            <h2 style="text-align:center; padding-top:1%;">CONNECT</h2>
+            <a href="https://plus.google.com/+ConnorGutman">
+                <img class="social-icon" id="gplus" style="margin-left:5%;" src="img/google.svg">
+            </a>
+            <a href="https://twitter.com/ConnorGutman">
+                <img class="social-icon" id="twitter" src="img/twitter.svg">
+            </a>
+            <a href="https://github.com/ConnorGutman">
+                <img class="social-icon" id="github" src="img/github.svg">
+            </a>
+        </div>
+        <div id="section-5">
+            <div class="wow bounceIn" id="mail-wrapper">
+                <div id="mail-box">
+                    <h1 style="text-align:center;">Email Me!</h1>
+                    <div class="button" style="text-align: center;">
+                        <a class="work-buttons" href="mailto:connorgutman@gmail.com">Send Me Something</a>
+                    </div>
+                </div>
+                <div id="mail-box-triangle">
+                    <div></div>
+                </div>
+            </div>
+            <img class="logo7 wow bounceIn" data-wow-delay="0.5s" src="img/logo7.svg">
+        </div>
+        <div id="section-6">
+            <img class="wow pulse" src="img/octocat.svg" style="width:60%; height:auto; margin-left:20%;">
+            <h2 style="text-align:center; padding-top:2%;">Proudly Hosted on Github</h2>
+            <p style="text-align:center;">Connor Gutman 2014</p>
+            <p style="text-align:center;">connorgutman@gmail.com</p>
+            <p style="text-align:center;">Special thanks to: <a href="http://simplefocus.com/flowtype/" class="thanks" style="font-family:karla; font-size:18;">flowtype</a>,<a href="http://responsive-nav.com/" class="thanks" style="font-family:karla; font-size:18;"> responsive nav</a>, <a href="http://mynameismatthieu.com/WOW/" class="thanks" style="font-family:karla; font-size:18;"> wow.js</a>, and <a href="http://daneden.github.io/animate.css/" class="thanks" style="font-family:karla; font-size:18;">animate.css</a>.</p>
+        </div>
     </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
-  
+    <!-- Jquery Scripts -->
+    <script src="js/flowtype.js"></script>
+    <script src="js/responsive-nav.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/social-icons.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $('body').flowtype({
+            minimum: 500,
+            maximum: 700,
+            minFont: 12,
+            maxFont: 80,
+            fontRatio: 30
+        });
+    </script>
+    <script>
+        var nav = responsiveNav(".nav-collapse");
+    </script>
+</body>
 
-</body></html>
+</html>
