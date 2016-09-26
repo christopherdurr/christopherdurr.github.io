@@ -1,0 +1,282 @@
+#about {
+  padding-top: 20vh;
+  .col-xs-12 {
+    div {
+      #about-card {
+        margin-top: 10vh;
+      }
+      .card {
+        .card-text {
+          .mobile-cut {
+            @media(max-width: 768px) {
+              display: none;
+            }
+          }
+          @media(min-width: 768px) {
+            text-align: justify;
+          }
+        }
+        .about-img {
+          width: 80%;
+          margin-left: 10%;
+          margin-top: -60vh;
+          @media(min-width: 768px) {
+            width: 40%;
+            margin-left: 30%;
+            margin-top: -15vh;
+          }
+        }
+        .about-content {
+          background-color: #DEDEDE;
+          .row {
+            padding: 1vh 2%;
+            div {
+              overflow: hidden;
+              .about-pic {
+                width: 100%;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                margin-bottom: 15px;
+              }
+            }
+            .about-text-block {
+              background-color: #ffffff;
+              padding: 15px;
+              box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            }
+            &:nth-of-type(1) {
+              div:nth-of-type(1) {
+                @media(max-width:768px) {
+                  padding: 0;
+                }
+                @media(min-width: 768px) {
+                  padding-left: 0;
+                }
+              }
+            }
+            &:nth-of-type(2) {
+              div:nth-of-type(1) {
+                @media(max-width:768px) {
+                  padding: 0;
+                }
+                @media(min-width: 768px) {
+                  padding-right: 0;
+                }
+              }
+            }
+            &:nth-of-type(4) {
+              div {
+                padding-left: 0;
+                padding-right: 0;
+              }
+            }
+          }
+        }
+        #chatRandom {
+          cursor: pointer;
+          .about-chat {
+            position: absolute;
+            width: 40%;
+            height: auto;
+            left: 65%;
+            top: -50vh;
+            z-index: 2;
+            @include animation('chatBubble 3s linear infinite');
+            @media(min-width: 768px) {
+              width: 20%;
+              top: -25vh;
+              left: 70%;
+            }
+          }
+        }
+        .search-window {
+          padding: 20px;
+          background-color: #ffffff;
+          color: #373a3c;
+          display: flex;
+          align-items: center;
+          h1 {
+            margin: 0;
+          }
+          span {
+            flex: 1;
+          }
+          i {
+            margin: 0 10px;
+            cursor: pointer;
+            &:nth-child(1) {
+              margin: 0 20px;
+            }
+          }
+          @media(max-width: 768px) {
+            i {
+              font-size: 1rem;
+              &:nth-child(1) {
+                margin: 0 10px 0 0;
+              }
+            }
+          }
+        }
+        a {
+          text-decoration: none;
+          .app {
+            display: inline-table;
+            margin: 0;
+            cursor: pointer;
+            .cooltip {
+              position: relative;
+              font-family: 'Karla', sans-serif;
+              top: 5px;
+              background: #212121;
+              font-size: 12px;
+              color: white;
+              border-radius: 4px;
+              padding: 10px;
+              opacity: 0;
+              transition: 0.2s all;
+              -webkit-transition: 0.2s all;
+              -moz-transition: 0.2s all;
+              &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                top: -4px;
+                left: 50%;
+                margin-left: -5px;
+                height: 10px;
+                width: 10px;
+                border-radius: 2px;
+                background-color: #212121;
+                transform: rotate(45deg);
+              }
+            }
+            &:hover {
+              .cooltip {
+                opacity: 1;
+                top: 0;
+              }
+            }
+            @media(min-width: 768px) {
+              margin: 1vh 5%;
+            }
+          }
+          &:nth-of-type(1) {
+            .app {
+              i {
+                color: #ffbb00;
+              }
+            }
+          }
+          &:nth-of-type(2) {
+            .app {
+              i {
+                color: #dedede;
+              }
+            }
+          }
+          &:nth-of-type(3) {
+            .app {
+              i {
+                color: #2196F3;
+              }
+            }
+          }
+          &:nth-of-type(4) {
+            .app {
+              i {
+                color: #109C58;
+              }
+            }
+          }
+          &:nth-of-type(5) {
+            .app {
+              i {
+                color: #f44336;
+              }
+            }
+          }
+          &:nth-of-type(6) {
+            .app {
+              i {
+                color: #424242;
+              }
+            }
+          }
+          &:nth-of-type(7) {
+            .app {
+              i {
+                color: #FC6D26;
+              }
+            }
+          }
+          &:nth-of-type(8) {
+            .app {
+              i {
+                color: #1E88BD;
+              }
+            }
+          }
+          &:nth-of-type(9) {
+            .app {
+              i {
+                color: #E94357;
+              }
+            }
+          }
+        }
+        .dots {
+          color: #373a3c;
+        }
+        .about-window {
+          padding: 20px;
+          background-color: #FFAB00;
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          h1 {
+            margin: 0;
+          }
+          span {
+            flex: 1;
+          }
+          i {
+            margin: 0 10px;
+            cursor: pointer;
+            &:nth-child(1) {
+              margin: 0 20px;
+            }
+          }
+        }
+        .card-header {
+          padding: 20px;
+          background-color: #ffbb00;
+          color: white;
+          display: flex;
+          align-items: center;
+          border-bottom: 0;
+          h1 {
+            color: #ffffff;
+            font-size: 0.75em;
+            @media(min-width: 768px) {
+              font-size: 1.75em;
+            }
+          }
+          span {
+            flex: 1;
+          }
+          i {
+            margin: 0 10px;
+            cursor: pointer;
+            &:nth-child(1) {
+              margin: 0 20px;
+            }
+          }
+        }
+        &:nth-of-type(1) {
+          @media(max-width: 768px) {
+            margin-top: 15vh;
+          }
+        }
+      }
+    }
+  }
+}

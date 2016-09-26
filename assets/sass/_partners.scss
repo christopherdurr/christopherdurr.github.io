@@ -1,0 +1,203 @@
+#partners {
+  margin-bottom: 10vh;
+  .chat-window {
+    padding: 10px;
+    background-color: #0B8043;
+    color: white;
+    display: flex;
+    align-items: center;
+    span {
+      flex: 1;
+    }
+    i {
+      margin: 0 10px;
+      cursor: pointer;
+      &:nth-child(1) {
+        margin: 0 20px;
+      }
+    }
+  }
+  .chat-top {
+    padding: 20px;
+    background-color: #109C58;
+    color: white;
+    display: flex;
+    align-items: center;
+    h1 {
+      color: #ffffff;
+      font-size: 0.75em;
+      @media(min-width: 768px) {
+        font-size: 1.75em;
+      }
+    }
+    span {
+      flex: 1;
+    }
+    i {
+      margin: 0 10px;
+      cursor: pointer;
+      &:nth-child(1) {
+        margin: 0 20px;
+      }
+    }
+  }
+  .chat-body {
+    background-color: #000000;
+    height: auto;
+    overflow-y: hidden;
+    .col-sm-4 {
+      padding: 5%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: 0s ease all;
+      @media(min-width: 768px) {
+        background-position: top;
+        background-size: contain;
+        margin-bottom: -5%;
+      }
+    }
+    .hide-partner {
+      display: none;
+    }
+    .law {
+      background-image: url('../img/LAW.jpg');
+      padding-top: 55%;
+      @media(min-width: 768px) {
+        padding-top: 22.1874999778%;
+      }
+      &:hover {
+        cursor: pointer;
+        background-image: url('../img/LAW-hoverrr.jpg');
+      }
+      &.active {
+        background-image: url('../img/LAW.jpg');
+        background-size: 100%;
+        padding-top: 65vh;
+        width: 100%;
+        transition: 0.5s all ease;
+        @media(min-width: 768px) {
+          background-size: cover;
+        }
+      }
+    }
+    .floatbit {
+      background-image: url('../img/floatbit.jpg');
+      padding-top: 55%;
+      @media(min-width: 768px) {
+        padding-top: 22.22222222%;
+      }
+      &:hover {
+        cursor: pointer;
+        background-image: url('../img/floatbit-hoverr.jpg');
+      }
+      &.active {
+        background-image: url('../img/floatbit.jpg');
+        background-size: 100%;
+        padding-top: 65vh;
+        width: 100%;
+        transition: 0.5s all ease;
+        @media(min-width: 768px) {
+          background-size: cover;
+        }
+      }
+    }
+    .noho {
+      background-image: url('../img/noho.jpg');
+      padding-top: 55%;
+      @media(min-width: 768px) {
+        padding-top: 22.22222222%;
+      }
+      &:hover {
+        cursor: pointer;
+        background-image: url('../img/noho-hoverr.jpg');
+      }
+      &.active {
+        background-image: url('../img/noho.jpg');
+        background-size: 100%;
+        padding-top: 65vh;
+        width: 100%;
+        transition: 0.5s all ease;
+        @media(min-width: 768px) {
+          background-size: cover;
+        }
+      }
+    }
+    .partner-generic {
+      @media(max-width: 768px) {
+        display: none;
+      }
+    }
+    .partner-generic-1 {
+      background-image: url('../img/partner-generic.jpg');
+      padding-top: 55%;
+      @media(min-width: 768px) {
+        padding-top: 22.22222222%;
+      }
+    }
+    .partner-generic-2 {
+      background-image: url('../img/partner-generic-2.jpg');
+      padding-top: 55%;
+      @media(min-width: 768px) {
+        padding-top: 22.22222222%;
+      }
+    }
+    .partner-generic-3 {
+      background-image: url('../img/partner-generic-3.jpg');
+      padding-top: 55%;
+      @media(min-width: 768px) {
+        padding-top: 22.22222222%;
+      }
+    }
+    .chat-me {
+      position: relative;
+      width: 20%;
+      height: auto;
+      margin-left: 40%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .chat-LAW,
+    .chat-floatbit,
+    .chat-noho {
+      width: 33.33%;
+      height: 60px;
+      padding: 0 2%;
+      float: left;
+      margin-top: 20vh;
+    }
+    #callUI {
+      position: absolute;
+      width: 40%;
+      height: auto;
+      bottom: 5%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      opacity: 0;
+      z-index: -1;
+      transition: all 0.75s ease;
+      @media(min-width: 768px) {
+        width: 30%;
+      }
+    }
+    #chatHead {
+      position: absolute;
+      width: 20%;
+      height: auto;
+      bottom: 7%;
+      right: 10%;
+      opacity: 0;
+      z-index: -1;
+      transition: all 0.75s ease;
+      @media(min-width: 768px) {
+        bottom: 5%;
+        right: 5%;
+      }
+    }
+    .showUI {
+      z-index: 1 !important;
+      opacity: 1 !important;
+    }
+  }
+}

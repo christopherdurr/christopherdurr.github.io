@@ -1,0 +1,153 @@
+#contact {
+  margin-bottom: 20vh;
+  @media(min-width: 768px) {
+    margin-bottom: 40vh;
+  }
+  .chat-window {
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    display: flex;
+    align-items: center;
+    span {
+      flex: 1;
+    }
+    i {
+      margin: 0 10px;
+      cursor: pointer;
+      &:nth-child(1) {
+        margin: 0 20px;
+      }
+    }
+  }
+  .chat-top {
+    padding: 20px;
+    background-color: #c62828;
+    color: white;
+    display: flex;
+    align-items: center;
+    h1 {
+      color: #ffffff;
+      font-size: 0.75em;
+      @media(min-width: 768px) {
+        font-size: 1.75em;
+      }
+    }
+    span {
+      flex: 1;
+    }
+    i {
+      margin: 0 10px;
+      cursor: pointer;
+      &:nth-child(1) {
+        margin: 0 20px;
+      }
+    }
+  }
+  .chat-body {
+    background-color: #ffffff;
+    height: auto;
+    overflow: hidden;
+    div {
+      padding: 0;
+      #mailTo {
+        .compose {
+          position: absolute;
+          bottom: 4%;
+          right: 8%;
+          font-size: 2rem;
+          color: #f44336;
+          z-index: 1;
+          transition: 1s ease all;
+          &:before {
+            content: "";
+            position: absolute;
+            right: 25%;
+            bottom: 25%;
+            width: 50%;
+            height: 50%;
+            background-color: #ffffff;
+            z-index: -1;
+          }
+          @media(min-width: 768px) {
+            font-size: 5rem;
+            right: 5%;
+            bottom: 2%;
+          }
+        }
+        #mailConnor {
+          position: absolute;
+          bottom: 4%;
+          right: 5%;
+          transition: 1s ease all;
+          @media(max-width: 768px) {
+            width: 40%;
+            bottom: 6%;
+            right: 7%;
+          }
+        }
+        &:hover {
+          .compose {
+            transform: rotate(360deg);
+          }
+          #mailConnor {
+            transform: scale(1.1);
+          }
+        }
+      }
+      ul {
+        height: 65vh;
+        margin-bottom: 0;
+        overflow-y: scroll;
+        padding: 0;
+        list-style-type: none;
+        li {
+          padding: 1vh 2%;
+          border-bottom: 2px solid #bfbfbf;
+          font-weight: 600;
+          text-transform: uppercase;
+          @media(max-width: 768px) {
+            font-size: 0.75rem;
+          }
+          i {
+            vertical-align: middle;
+          }
+          span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            margin-right: 2%;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 15px;
+            @media(min-width: 768px) {
+              width: 60px;
+              height: 60px;
+              line-height: 60px;
+              font-size: 2rem;
+              border-radius: 30px;
+            }
+          }
+          &:nth-of-type(4n+1) span {
+            background-color: #ffbb00;
+          }
+          &:nth-of-type(4n+2) span {
+            background-color: #2196F3;
+          }
+          &:nth-of-type(4n+3) span {
+            background-color: #f44336;
+          }
+          &:nth-of-type(4n+4) span {
+            background-color: #109C58;
+          }
+        }
+        @media(min-width: 768px) {
+          height: 50vh;
+        }
+      }
+    }
+  }
+}

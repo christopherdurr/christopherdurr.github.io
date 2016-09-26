@@ -1,0 +1,64 @@
+body {
+  font-family: 'Karla', sans-serif;
+}
+h1 {
+  color: #45b29a;
+}
+nav {
+  a {
+    font-size: 1rem;
+    @media(min-width: 768px) {
+    font-size: 1.5rem;
+    }
+  }
+}
+#about {
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #45b29a;
+    @media(min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+  .search-window {
+    .search-window-apps {
+      font-size: 2rem;
+    }
+    h1 {
+      color: #373a3c !important;
+      font-size: 1rem;
+      @media(min-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+  }
+  .apps {
+    i {
+      font-size: 3rem;
+      width: 5rem;
+      margin: 2%;
+      color: #373a3c;
+      @media(min-width: 768px) {
+        font-size: 5rem;
+        width: 5rem;
+      }
+    }
+  }
+}
+#skills {
+  h1 {
+    font-size: 1rem;
+    color: #45b29a;
+    @media(min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+  ul {
+    li {
+      a {
+        color: #55595c;
+      }
+    }
+  }
+}

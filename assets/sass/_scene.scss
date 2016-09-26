@@ -1,0 +1,96 @@
+#scene {
+  background-color: #E0EBE8;
+  #phoenix {
+    height: 90vh;
+    overflow: hidden;
+    padding: 0;
+    @media(max-width: 768px) {
+      height: 50vh;
+    }
+    #PHXNYC {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      @include animation('intro-scene 15s' forwards 2s);
+      @media(max-width: 768px) {
+        transform: scale(0.4);
+        transform-origin: bottom left;
+      }
+    }
+    #sun {
+      position: absolute;
+      top: 18vh;
+      right: 5%;
+      @media(max-width: 768px) {
+        top: 0;
+        transform: scale(0.4);
+        transform-origin: center right;
+      }
+    }
+    .cloudA,
+    .cloudB,
+    .cloudC,
+    .cloudD {
+      position: absolute;
+      width: 10%;
+    }
+    .cloudA {
+      top: 5vh;
+      @include animation('clouds 50s linear infinite');
+    }
+    .cloudB {
+      top: 10vh;
+      @include animation('clouds 60s linear infinite');
+    }
+    .cloudC {
+      top: 6vh;
+      @include animation('clouds 25s linear infinite');
+    }
+    .cloudD {
+      top: 13vh;
+      @include animation('clouds 90s linear infinite');
+    }
+    .plane {
+      position: absolute;
+      bottom: 110%;
+      width: 5%;
+      height: auto;
+      @include animation('planes 30s linear infinite 10s');
+    }
+    .planeB {
+      position: absolute;
+      bottom: -5vh;
+      width: 5%;
+      height: auto;
+      @include animation('planesB 20s linear infinite 11s');
+    }
+    .shipA {
+      position: absolute;
+      bottom: 5vh;
+      right: 110%;
+      width: 5%;
+      height: auto;
+      z-index: 2;
+      @include animation('clouds 50s linear infinite 15s');
+    }
+    .shipB {
+      position: absolute;
+      bottom: 10vh;
+      right: 110%;
+      width: 5%;
+      height: auto;
+      z-index: 2;
+      @include animation('clouds 20s linear infinite reverse 20s');
+    }
+    .shipC {
+      position: absolute;
+      bottom: 0;
+      right: 110%;
+      width: 10%;
+      height: auto;
+      z-index: 2;
+      @include animation('clouds 80s linear infinite 20s');
+    }
+  }
+}

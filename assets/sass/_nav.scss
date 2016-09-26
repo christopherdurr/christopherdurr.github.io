@@ -1,0 +1,41 @@
+nav {
+  padding: 2vh 10% !important;
+  transition: all 0.5s ease;
+  &:hover{
+    background-color: #ffffff;
+    #topNav{
+      ul {
+        opacity: 1 !important;
+      }
+    }
+  }
+  #topNav {
+    .navbar-brand {
+      width: 9%;
+      transition: all 0.5s ease;
+      img {
+        width: 100%;
+      }
+      @media(max-width: 768px) {
+        display: none;
+      }
+    }
+    ul {
+      transition: all 0.5s ease;
+      float: right;
+      li {
+        a {
+          color: #45b29a;
+        }
+      }
+    }
+    @media(max-width: 768px) {
+      ul {
+        float: none;
+        li {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

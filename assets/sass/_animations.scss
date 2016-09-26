@@ -1,0 +1,69 @@
+//Intro scene scroll
+@include keyframes(intro-scene) {
+  100% {
+    left: calc(100% - 1200px);
+  }
+}
+@media(min-width: 768px) {
+  @include keyframes(intro-scene) {
+    100% {
+      left: calc(100% - 3634.3052px);
+    }
+  }
+}
+//Clouds
+@include keyframes(clouds) {
+  0% {
+    right: -10%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+//Planes
+@include keyframes(planes) {
+  0% {
+    left: 0;
+    bottom: 110%;
+  }
+  100% {
+    left: 100%;
+    bottom: 0;
+  }
+}
+@include keyframes(planesB) {
+  0% {
+    right: 0;
+    bottom: 0;
+  }
+  100% {
+    right: 110%;
+    bottom: 80%;
+  }
+}
+@include keyframes(chatBubble) {
+  0% {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+//Subway
+@include keyframes(subway) {
+  0% {
+    right: -120%;
+  }
+  50% {
+    right: 0%;
+  }
+  80% {
+    right: 0%;
+  }
+  100% {
+    right: 100%;
+  }
+}

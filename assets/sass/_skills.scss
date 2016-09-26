@@ -1,0 +1,101 @@
+#skills {
+  margin-top: 10vh;
+  .col-xs-12 {
+    div {
+      .terminal {
+        .card-window {
+          background-color: #bfbfbf;
+          padding: 10px;
+          color: white;
+          display: flex;
+          align-items: center;
+          h1 {
+            color: #ffffff;
+          }
+          span {
+            flex: 1;
+          }
+          i {
+            margin: 0 10px;
+            cursor: pointer;
+            &:nth-child(1) {
+              margin: 0 20px;
+            }
+          }
+        }
+        .card-header {
+          background-color: #dedede;
+          border: 0;
+          border-radius: 0;
+          padding-left: 0;
+          padding-right: 0;
+          .nav {
+            width: 100%;
+            margin-left: 0;
+            background-color: #dedede;
+            .nav-item {
+              margin-bottom: 0;
+              a {
+                border: 0;
+              }
+              &:hover {
+                a {
+                border: 0;
+                border-radius: 0;
+                }
+              }
+            }
+            .active {
+              background-color: #bfbfbf;
+              border-radius: 0;
+              border-color: #DEDEDE #D1CFCF #D1CFCF #DEDEDE;
+            }
+          }
+        }
+        .card-block {
+          padding-left: 0;
+          padding-right: 0;
+          background-color: #424242;
+          p {
+            color: #bfbfbf;
+          }
+          .zsh-content {
+            font-size: 12px;
+            @media(min-width: 768px) {
+              font-size: 22px;
+            }
+            .zsh-path {
+              background-color: #2B8BD2;
+            }
+            .zsh-branch {
+              background-color: #859916;
+            }
+            .zsh-arrow {
+              height: 14px;
+              width: auto;
+              margin-top: -1px;
+              &:nth-of-type(1) {
+                background-color: #859916;
+              }
+              &:nth-of-type(2) {
+                margin-left: -0.5px;
+              }
+              @media(min-width: 768px) {
+                height: 25.5px;
+                margin-top: -3px;
+              }
+            }
+            .col-sm-3 {
+              ul {
+                li {
+                  color: #ffffff;
+                  text-align: left;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
