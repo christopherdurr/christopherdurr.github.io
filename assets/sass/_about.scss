@@ -1,11 +1,11 @@
 //cache fix
+.about-top-card {
+  z-index: 2;
+}
 #about {
   padding-top: 20vh;
   .col-xs-12 {
     div {
-      .about-top-card {
-        z-index: 2;
-      }
       #about-card {
         margin-top: 10vh;
       }
